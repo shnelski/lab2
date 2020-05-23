@@ -1,49 +1,103 @@
-body {
-    background-image: url("https://files.123freevectors.com/wp-content/original/157804-abstract-turquoise-and-white-graphic-background.jpg");
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  .alert {
-    
-    text-align: center;
-    margin-bottom: 0px !important;
+* {
+  box-sizing: border-box;
 }
-img {
-  width: 100%; /* You can set the dimensions to whatever you want */
-  height: auto;
-  
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #27bd7f;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
 .limit { 
   width: 100%; 
   height: auto; 
   max-height:400px;
   overflow:hidden; 
   } 
-.col-sm-8 {
-  background-color: rgb(223, 147, 197);
-  
-}  
-.col-sm-8 h1 {
-  color: rgb(13, 3, 95);
-  text-align: center;
-}  
-.nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-.col-sm-8 p {
+img {
+    width: 100%; /* You can set the dimensions to whatever you want */
+    height: auto;
+    
+  }
+  #p1{
+    text-align: right;
+    padding: 40px;
+    
+  }
+  p {
+    text-align: justify;
+  } 
+.aside {
+  background-color: #1d1f20;
   padding: 15px;
-  font-size: 20px;
-  text-align: justify;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-#p1{
-  text-align: right;
-  padding: 40px;
+
+
+.footer {
+  background-color: #25a12f;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  
+
   
 }
-p {
-  text-align: justify;
+@media only screen and (max-width: 768px) {
+  
+  .aside {
+    background-color: #1d1f20;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    
+  }
+  p {
+    text-align: center;
+  } 
+  h1 {
+    text-align: center;
+  }
 }
